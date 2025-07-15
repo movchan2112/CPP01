@@ -1,9 +1,9 @@
-NAME = zombie
+NAME = brain
 
 CXX = c++
 CXXFLAGS = -std=c++98
 
-SRC = main.cpp Zombie.cpp zombieHord.cpp
+SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)

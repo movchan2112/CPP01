@@ -1,8 +1,9 @@
 #include "Zombie.hpp"
 
 int main(){
-	Zombie* lays = newZombie("Lays");
-	lays->announce();
-	randomChump("Kevin");
+	int n = 5;
+	Zombie* lays = zombieHorde(n,"Lays");
+	for(int i = 0; i < n; i++)
+		lays[i].announce();
 	delete(lays);
 }
